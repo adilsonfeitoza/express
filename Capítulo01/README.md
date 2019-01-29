@@ -1,9 +1,5 @@
 # Curso Regex 
 
-### O que é o Regex?
-
-Regex é uma 
-
 - `Target String`: Alvo
 - `Pattern`: Expressão regular
 - `Regex Engine`: Java, C#, Javascript, PHP, C, Python.
