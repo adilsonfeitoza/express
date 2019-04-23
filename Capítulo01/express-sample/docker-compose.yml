@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  mysql-db:
+    container-name: mysql
+    restart: always
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSOWRD: root
+      MYSQL_DATABASE: nodejs
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-db:/var/lib/mysql
+    networks:
+      - express-sample
+
+volumes:
+  mysql-db:
+networks:
+  amb-api-net:
+    driver: bridge
+
+      
